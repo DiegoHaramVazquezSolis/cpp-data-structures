@@ -1,0 +1,35 @@
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# CMake
+build/
+CMakeCache.txt
+CMakeFiles/
+
+# Compiled test binaries (built ad-hoc with g++, see each test header)
+test_da
+test_linked_list
+test_stack
+test_queue
+test_doubly_linked_list
+test_hash_table
+test_bst
+test_heap
+test_graph
+test_ll_asan
+
+# Generic build / object artifacts
+*.o
+*.out
+*.exe
+a.out
+
+# Debug symbol bundles
+*.dSYM/
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# macOS
+.DS_Store
