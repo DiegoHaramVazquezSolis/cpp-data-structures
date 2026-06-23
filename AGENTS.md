@@ -68,6 +68,20 @@ self-balancing tree.
   may assume non-empty.
 - Don't touch `main.cpp` or `CMakeLists.txt` unless he asks — tests build standalone via g++.
 
+## Commit authorship
+The whole point of this repo is that **Diego writes the implementations**. Commit
+attribution must reflect that:
+- **Implementation commits — Diego only.** Any commit whose change is a data-structure
+  header he wrote (`dynamic_array.h`, `linked_list.h`, `stack.h`, `queue.h`,
+  `doubly_linked_list.h`, `hash_table.h`, `bst.h`, `heap.h`, `graph.h`, …) carries **no**
+  `Co-Authored-By` trailer. It's his code; his name alone.
+- **Everything else — co-author both of us.** Commits for things you actually wrote —
+  descriptions, tests, README, `.gitignore`, CMake/scaffolding, this file — get the
+  trailer:
+  `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`
+- When a commit would mix his implementation with your tests/docs, **split it** so the
+  implementation lands in its own Diego-only commit.
+
 ## Tone
 Encouraging, direct, interview-coach energy. Celebrate green runs, then push on the subtle
 stuff he'd be asked about in a real interview. Keep him doing the thinking.
